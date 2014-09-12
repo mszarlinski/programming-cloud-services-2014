@@ -4,11 +4,14 @@ import io.netty.channel.ChannelHandler.Sharable;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
-import java.net.InetAddress;
-
+/**
+ * 
+ * @author mszarlinski
+ *
+ */
 @Sharable
 public class EchoServerHandler extends SimpleChannelInboundHandler<String> {
-
+	/*
 	private static final String NEWLINE = System.lineSeparator();
 
 	@Override
@@ -18,7 +21,7 @@ public class EchoServerHandler extends SimpleChannelInboundHandler<String> {
 		ctx.write("Thread: " + Thread.currentThread().getName() + NEWLINE);
 		ctx.flush();
 	}
-
+*/
 	@Override
 	protected void channelRead0(ChannelHandlerContext ctx, String msg)
 			throws Exception {

@@ -4,19 +4,16 @@ import pl.javaart.mszarlinski.server.EchoServer;
 
 /**
  * 
- * @author Maciej
+ * @author mszarlinski
  *
  */
 public class Main {
 	public static void main(String[] args) throws Exception {
-		int port;
-		if (args.length > 0) {
-			port = Integer.parseInt(args[0]);
-		} else {
-			System.out.println("Using default port 8080");
-			port = 8080;
+		if (args.length == 0) {
+			throw new IllegalArgumentException("Port must be specified");
 		}
+		System.out.println("[HINT] You can overwrite default port using -Dport=9090 argument.");
+		int port = Integer.parseInt(args[0]);
 		new EchoServer(port).run();
 	}
-
 }
