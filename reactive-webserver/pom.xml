@@ -25,9 +25,9 @@
 					<executable>java</executable>
 					<arguments>
 						<argument>-classpath</argument>
-
 						<classpath />
 						<argument>pl.javaart.mszarlinski.Main</argument>
+						<argument>${port}</argument>
 					</arguments>
 				</configuration>
 			</plugin>
