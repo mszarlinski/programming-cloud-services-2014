@@ -20,6 +20,7 @@ public class EchoServer {
 	}
 
 	public void run() throws Exception {
+// zmiana PW-1224
 		EventLoopGroup bossGroup = new NioEventLoopGroup(1);
 		EventLoopGroup workerGroup = new NioEventLoopGroup();
 		try {
