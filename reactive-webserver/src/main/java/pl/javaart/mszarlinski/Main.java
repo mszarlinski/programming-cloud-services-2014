@@ -9,6 +9,7 @@ import pl.javaart.mszarlinski.server.EchoServer;
  */
 public class Main {
 	public static void main(String[] args) throws Exception {
+System.out.println("Hello world!");
 		if (args.length == 0) {
 			throw new IllegalArgumentException("Port must be specified");
 		}
